@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".view.RegistrarUsuario">
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginHorizontal="16dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registro de Usuarios"
+                android:background="@drawable/background_1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                app:lottie_autoPlay="true"
+                app:lottie_rawRes="@raw/adduser"
+                app:lottie_loop="true"
+                android:layout_gravity="center"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                style="@style/TextInputLayout">
+               <com.google.android.material.textfield.TextInputEditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="@string/b_nombre"
+                   android:drawableStart="@drawable/baseline_supervised_user_circle_24"
+                   android:drawablePadding="10dp"
+                   android:padding="16dp"
+                   android:id="@+id/nombre2"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                style="@style/TextInputLayout">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/a_email"
+                    android:drawableStart="@drawable/baseline_email_24"
+                    android:drawablePadding="10dp"
+                    android:padding="16dp"
+                    android:id="@+id/email2"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                app:hintEnabled="true"
+                app:passwordToggleEnabled="true"
+                android:layout_height="wrap_content"
+                style="@style/TextInputLayout">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/a_pass"
+                    android:inputType="textPassword"
+                    android:drawableStart="@drawable/baseline_lock_24"
+                    android:drawablePadding="10dp"
+                    android:padding="16dp"
+                    android:id="@+id/password2"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                app:hintEnabled="true"
+                app:passwordToggleEnabled="true"
+                android:layout_height="wrap_content"
+                style="@style/TextInputLayout">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/b_confirmar"
+                    android:inputType="textPassword"
+                    android:drawableStart="@drawable/baseline_lock_24"
+                    android:drawablePadding="10dp"
+                    android:padding="16dp"
+                    android:id="@+id/confirmarPassword2"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+           <androidx.appcompat.widget.AppCompatButton
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/b_regi"
+               android:textAllCaps="false"
+               android:textStyle="bold"
+               android:layout_marginTop="10dp"
+               android:layout_marginBottom="10dp"
+               android:textColor="@color/white"
+               android:textSize="20sp"
+               android:background="@drawable/background_4"
+               android:id="@+id/registrate2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:id="@+id/tengoCuenta"
+                android:layout_marginBottom="10dp"
+                android:text="Ya tengo Cuenta"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
